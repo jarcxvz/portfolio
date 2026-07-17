@@ -1,0 +1,53 @@
+.about__row {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(32px, 6vw, 72px);
+  align-items: center;
+}
+
+.about__art {
+  max-width: 340px;
+}
+
+.about__para {
+  color: var(--ink-70);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 0 16px;
+}
+
+.about__edu {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--ink-12);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.about__edu .status-dot {
+  margin-top: 6px;
+}
+
+.about__edu-school {
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 15.5px;
+}
+
+.about__edu-detail {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--ink-50);
+}
+
+@media (max-width: 860px) {
+  .about__row {
+    grid-template-columns: 1fr;
+  }
+  .about__art {
+    max-width: 220px;
+  }
+}

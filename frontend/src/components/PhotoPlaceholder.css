@@ -1,0 +1,46 @@
+.photo-placeholder {
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--ink);
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px dashed var(--ink-30);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--ink-12),
+    var(--ink-12) 1px,
+    transparent 1px,
+    transparent 14px
+  );
+  color: var(--ink-50);
+}
+
+.section-dark .photo-placeholder--empty {
+  border-color: var(--paper-18);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--paper-10),
+    var(--paper-10) 1px,
+    transparent 1px,
+    transparent 14px
+  );
+  color: var(--paper-55);
+}
+
+.photo-placeholder--empty span {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+}
